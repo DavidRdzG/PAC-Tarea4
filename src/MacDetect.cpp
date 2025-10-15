@@ -19,6 +19,9 @@
   #include <netpacket/packet.h>
   #include <net/ethernet.h>
 #endif
+
+#include <cstring>
+
 namespace AntiVM {
 static const std::vector<std::string> vm_ouis = {
     "08:00:27","00:05:69","00:0c:29","00:50:56","00:03:ff","00:15:5d"
