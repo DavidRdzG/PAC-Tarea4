@@ -10,17 +10,25 @@ Proyecto en C++17 con 3 técnicas de detección de entornos virtuales.
 ## Compilación
 
 ### Linux
-```bash
-g++ -std=c++17 src/*.cpp -o antivm_detect
+```
+Acceder a la carpeta src
+
+cd T4/src/
+
+g++ -std=c++17 *.cpp -o antivm_detect
 ```
 
 ### Windows
-```bat
-cl /EHsc /std:c++17 src\*.cpp /Fe:antivm_detect.exe iphlpapi.lib
+```
+Acceder a la carpeta src
+
+cd T4/src/
+
+cl /EHsc /std:c++17 *.cpp /Fe:antivm_detect.exe iphlpapi.lib
 ```
 
 ## Ejecución
-```bash
+```
 ./antivm_detect
 ./antivm_detect --technique 1  # CPUID
 ```
